@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="credit_score <= -0.746\ngini = 0.105\nsamples = 5000000\nvalue = [4721996, 278004]\nclass = not_applied", fillcolor="#e78845"] ;
+1 [label="desired_amount <= -0.172\ngini = 0.207\nsamples = 1391862\nvalue = [1228581, 163281]\nclass = not_applied", fillcolor="#e89253"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="loan_rate <= -1.508\ngini = 0.284\nsamples = 573691\nvalue = [475415, 98276]\nclass = not_applied", fillcolor="#ea9b62"] ;
+1 -> 2 ;
+3 [label="gini = 0.421\nsamples = 43672\nvalue = [30512, 13160]\nclass = not_applied", fillcolor="#f0b78e"] ;
+2 -> 3 ;
+4 [label="gini = 0.27\nsamples = 530019\nvalue = [444903, 85116]\nclass = not_applied", fillcolor="#ea995f"] ;
+2 -> 4 ;
+5 [label="loan_rate <= -1.508\ngini = 0.146\nsamples = 818171\nvalue = [753166, 65005]\nclass = not_applied", fillcolor="#e78c4a"] ;
+1 -> 5 ;
+6 [label="gini = 0.301\nsamples = 48810\nvalue = [39794, 9016]\nclass = not_applied", fillcolor="#eb9e66"] ;
+5 -> 6 ;
+7 [label="gini = 0.135\nsamples = 769361\nvalue = [713372, 55989]\nclass = not_applied", fillcolor="#e78b49"] ;
+5 -> 7 ;
+8 [label="loan_rate <= -1.508\ngini = 0.062\nsamples = 3608138\nvalue = [3493415, 114723]\nclass = not_applied", fillcolor="#e68540"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="desired_amount <= -0.128\ngini = 0.18\nsamples = 330861\nvalue = [297778, 33083]\nclass = not_applied", fillcolor="#e88f4f"] ;
+8 -> 9 ;
+10 [label="gini = 0.276\nsamples = 124375\nvalue = [103818, 20557]\nclass = not_applied", fillcolor="#ea9a60"] ;
+9 -> 10 ;
+11 [label="gini = 0.114\nsamples = 206486\nvalue = [193960, 12526]\nclass = not_applied", fillcolor="#e78946"] ;
+9 -> 11 ;
+12 [label="credit_score <= 0.038\ngini = 0.049\nsamples = 3277277\nvalue = [3195637, 81640]\nclass = not_applied", fillcolor="#e6843e"] ;
+8 -> 12 ;
+13 [label="gini = 0.083\nsamples = 1330076\nvalue = [1272170, 57906]\nclass = not_applied", fillcolor="#e68742"] ;
+12 -> 13 ;
+14 [label="gini = 0.024\nsamples = 1947201\nvalue = [1923467, 23734]\nclass = not_applied", fillcolor="#e5833b"] ;
+12 -> 14 ;
+}
